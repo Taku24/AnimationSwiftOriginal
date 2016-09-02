@@ -115,11 +115,11 @@ SWIFT_CLASS("_TtC22AnimationSwiftOriginal11AppDelegate")
 @end
 
 @class NSCoder;
-@class UILabel;
+@class UIImageView;
 
 SWIFT_CLASS("_TtC22AnimationSwiftOriginal8MainView")
 @interface MainView : UIView
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, readonly, copy) NSString * _Nonnull nibName;
 @property (nonatomic, strong) UIView * _Null_unspecified view;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -128,6 +128,7 @@ SWIFT_CLASS("_TtC22AnimationSwiftOriginal8MainView")
 - (UIView * _Nonnull)loadFromNib;
 @end
 
+@class CAAnimation;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC22AnimationSwiftOriginal14ViewController")
@@ -136,8 +137,15 @@ SWIFT_CLASS("_TtC22AnimationSwiftOriginal14ViewController")
 - (void)loadView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)animationDidStop:(CAAnimation * _Nonnull)anim finished:(BOOL)flag;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ViewController (SWIFT_EXTENSION(AnimationSwiftOriginal))
+- (void)moveAnimation;
 @end
 
 #pragma clang diagnostic pop

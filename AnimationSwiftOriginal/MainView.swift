@@ -10,6 +10,7 @@ import UIKit
 
 class MainView: UIView {
     
+    @IBOutlet weak var imageView: UIImageView!
     
     let nibName = "MainView"
     var view: UIView!

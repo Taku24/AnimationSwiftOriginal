@@ -7,19 +7,21 @@ provides-member:
 - ["C22AnimationSwiftOriginal8MainView", ""]
 provides-dynamic-lookup:
 - "createView"
-- "view"
 - "loadFromNib"
+- "imageView"
+- "view"
 - "nibName"
 depends-top-level:
-- "CGRect"
-- !private "Array"
-- "StringLiteralType"
-- "NSCoder"
-- !private "NSBundle"
-- "MainView"
 - !private "UINib"
+- "NSCoder"
+- "UIImageView"
+- "CGRect"
 - "UIView"
 - !private "UIViewAutoresizing"
+- !private "NSBundle"
+- "MainView"
+- "StringLiteralType"
+- !private "Array"
 depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "UINib"]
@@ -29,6 +31,7 @@ depends-member:
 - !private ["Ps9AnyObject", "bounds"]
 - ["Ps9AnyObject", "createView"]
 - !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "imageView"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateWithOwner"]
 - ["Ps9AnyObject", "loadFromNib"]
@@ -63,6 +66,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "bounds"]
 - ["Ps11CVarArgType", "createView"]
 - !private ["Ps11CVarArgType", "frame"]
+- ["Ps11CVarArgType", "imageView"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "instantiateWithOwner"]
 - ["Ps11CVarArgType", "loadFromNib"]
@@ -89,6 +93,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "createView"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "imageView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateWithOwner"]
 - ["Ps28CustomDebugStringConvertible", "loadFromNib"]
@@ -110,6 +115,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "createView"]
 - !private ["Ps23CustomStringConvertible", "first"]
 - !private ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "imageView"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateWithOwner"]
 - ["Ps23CustomStringConvertible", "loadFromNib"]
@@ -128,6 +134,7 @@ depends-member:
 - !private ["Ps9Equatable", "bounds"]
 - ["Ps9Equatable", "createView"]
 - !private ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "imageView"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateWithOwner"]
 - ["Ps9Equatable", "loadFromNib"]
@@ -147,6 +154,7 @@ depends-member:
 - !private ["Ps8Hashable", "bounds"]
 - ["Ps8Hashable", "createView"]
 - !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "imageView"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateWithOwner"]
 - ["Ps8Hashable", "loadFromNib"]
@@ -170,6 +178,7 @@ depends-member:
 - ["C22AnimationSwiftOriginal8MainView", "CGRect"]
 - !private ["C22AnimationSwiftOriginal8MainView", "NSBundle"]
 - ["C22AnimationSwiftOriginal8MainView", "NSCoder"]
+- ["C22AnimationSwiftOriginal8MainView", "UIImageView"]
 - !private ["C22AnimationSwiftOriginal8MainView", "UINib"]
 - ["C22AnimationSwiftOriginal8MainView", "UIView"]
 - !private ["C22AnimationSwiftOriginal8MainView", "UIViewAutoresizing"]
@@ -177,6 +186,7 @@ depends-member:
 - !private ["C22AnimationSwiftOriginal8MainView", "bounds"]
 - ["C22AnimationSwiftOriginal8MainView", "createView"]
 - ["C22AnimationSwiftOriginal8MainView", "deinit"]
+- ["C22AnimationSwiftOriginal8MainView", "imageView"]
 - ["C22AnimationSwiftOriginal8MainView", "init"]
 - ["C22AnimationSwiftOriginal8MainView", "loadFromNib"]
 - ["C22AnimationSwiftOriginal8MainView", "nibName"]
@@ -207,6 +217,7 @@ depends-member:
 - !private ["PSo8NSCoding", "bounds"]
 - ["PSo8NSCoding", "createView"]
 - !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "imageView"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "loadFromNib"]
 - ["PSo8NSCoding", "nibName"]
@@ -215,6 +226,7 @@ depends-member:
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "NSBundle"]
 - ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "UIImageView"]
 - !private ["CSo8NSObject", "UINib"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "UIViewAutoresizing"]
@@ -223,6 +235,7 @@ depends-member:
 - !private ["CSo8NSObject", "bounds"]
 - ["CSo8NSObject", "createView"]
 - !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateWithOwner"]
 - ["CSo8NSObject", "loadFromNib"]
@@ -236,6 +249,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "bounds"]
 - ["PSo16NSObjectProtocol", "createView"]
 - !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "imageView"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateWithOwner"]
 - ["PSo16NSObjectProtocol", "loadFromNib"]
@@ -276,6 +290,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - ["PSo29UIAccessibilityIdentification", "createView"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
+- ["PSo29UIAccessibilityIdentification", "imageView"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "loadFromNib"]
 - ["PSo29UIAccessibilityIdentification", "nibName"]
@@ -289,6 +304,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "bounds"]
 - ["PSo12UIAppearance", "createView"]
 - !private ["PSo12UIAppearance", "frame"]
+- ["PSo12UIAppearance", "imageView"]
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "loadFromNib"]
 - ["PSo12UIAppearance", "nibName"]
@@ -302,6 +318,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "bounds"]
 - ["PSo21UIAppearanceContainer", "createView"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
+- ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "loadFromNib"]
 - ["PSo21UIAppearanceContainer", "nibName"]
@@ -315,6 +332,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - ["PSo17UICoordinateSpace", "createView"]
 - !private ["PSo17UICoordinateSpace", "frame"]
+- ["PSo17UICoordinateSpace", "imageView"]
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "loadFromNib"]
 - ["PSo17UICoordinateSpace", "nibName"]
@@ -328,6 +346,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "bounds"]
 - ["PSo13UIDynamicItem", "createView"]
 - !private ["PSo13UIDynamicItem", "frame"]
+- ["PSo13UIDynamicItem", "imageView"]
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "loadFromNib"]
 - ["PSo13UIDynamicItem", "nibName"]
@@ -341,6 +360,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "bounds"]
 - ["PSo18UIFocusEnvironment", "createView"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
+- ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "loadFromNib"]
 - ["PSo18UIFocusEnvironment", "nibName"]
@@ -351,6 +371,7 @@ depends-member:
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "NSBundle"]
 - ["CSo11UIResponder", "NSCoder"]
+- ["CSo11UIResponder", "UIImageView"]
 - !private ["CSo11UIResponder", "UINib"]
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "UIViewAutoresizing"]
@@ -359,6 +380,7 @@ depends-member:
 - !private ["CSo11UIResponder", "bounds"]
 - ["CSo11UIResponder", "createView"]
 - !private ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "loadFromNib"]
 - ["CSo11UIResponder", "nibName"]
@@ -371,6 +393,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "createView"]
 - !private ["PSo18UITraitEnvironment", "frame"]
+- ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "loadFromNib"]
 - ["PSo18UITraitEnvironment", "nibName"]
@@ -379,6 +402,7 @@ depends-member:
 - ["CSo6UIView", "CGRect"]
 - !private ["CSo6UIView", "NSBundle"]
 - ["CSo6UIView", "NSCoder"]
+- ["CSo6UIView", "UIImageView"]
 - !private ["CSo6UIView", "UINib"]
 - ["CSo6UIView", "UIView"]
 - !private ["CSo6UIView", "UIViewAutoresizing"]
@@ -387,6 +411,7 @@ depends-member:
 - !private ["CSo6UIView", "bounds"]
 - ["CSo6UIView", "createView"]
 - !private ["CSo6UIView", "frame"]
+- ["CSo6UIView", "imageView"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "loadFromNib"]
 - ["CSo6UIView", "nibName"]
@@ -436,6 +461,7 @@ depends-member:
 - ["Ps12_Reflectable", "createView"]
 - !private ["Ps12_Reflectable", "first"]
 - !private ["Ps12_Reflectable", "frame"]
+- ["Ps12_Reflectable", "imageView"]
 - ["Ps12_Reflectable", "init"]
 - ["Ps12_Reflectable", "loadFromNib"]
 - ["Ps12_Reflectable", "nibName"]
@@ -515,4 +541,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "761fe7439c0ff55e2efe917b7efff44a"
+interface-hash: "e571b5cbbbfaccc323f9a1c9e02920ce"

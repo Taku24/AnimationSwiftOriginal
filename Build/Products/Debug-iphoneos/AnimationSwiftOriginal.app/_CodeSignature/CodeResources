@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		K9lFM6dFhosZLPgVWkQVUxAtN3M=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
@@ -100,7 +104,7 @@
 		</data>
 		<key>MainView.nib</key>
 		<data>
-		HGF4ICJazJyMrDYbi2YwUlIVVYs=
+		yhOKee/O0Wwa+9fMUkKsQv+qToo=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -113,6 +117,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K9lFM6dFhosZLPgVWkQVUxAtN3M=
+			</data>
+			<key>hash2</key>
+			<data>
+			6G+V4RRezZDItjsizKbR4J/kQbkuqwAZrhyxop37HaU=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
@@ -294,11 +309,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HGF4ICJazJyMrDYbi2YwUlIVVYs=
+			yhOKee/O0Wwa+9fMUkKsQv+qToo=
 			</data>
 			<key>hash2</key>
 			<data>
-			mFsvbU7f3640pRzTSx0U+KlcXQczhgOCENFcQlAljIk=
+			DVPvV4EtCVNpr2V9w3PpFaf8W36+a4AanQ6YSuLqRDI=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

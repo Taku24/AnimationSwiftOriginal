@@ -7,25 +7,25 @@ provides-member:
 - ["C22AnimationSwiftOriginal14ViewController", "rotationAnimation"]
 - ["C22AnimationSwiftOriginal14ViewController", "chageScaleAnimetion"]
 provides-dynamic-lookup:
+- "rotationAnimation"
 - "chageScaleAnimetion"
 - "moveAnimation"
-- "rotationAnimation"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "CGFloat"
-- !private "CATransform3DMakeRotation"
 - !private "CAMediaTimingFunction"
-- !private "kCAFillModeBackwards"
-- !private "NSValue"
 - !private "kCAMediaTimingFunctionEaseIn"
-- !private "CABasicAnimation"
-- !private "M_PI"
 - !private "-"
 - !private "CATransform3DIdentity"
-- !private "BooleanLiteralType"
-- "ViewController"
-- !private "CGSizeMake"
+- !private "StringLiteralType"
+- !private "NSValue"
 - !private "/"
+- "ViewController"
+- !private "CABasicAnimation"
+- !private "CGSizeMake"
+- !private "M_PI"
+- !private "CGFloat"
+- !private "BooleanLiteralType"
+- !private "CATransform3DMakeRotation"
+- !private "kCAFillModeBackwards"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CABasicAnimation"]

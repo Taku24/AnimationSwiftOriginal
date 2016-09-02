@@ -14,13 +14,10 @@ extension ViewController {
     func moveAnimation(){
         let rightToLeftAnimation = CABasicAnimation(keyPath: "position.x")
         
-        //アニメーションの始点
         rightToLeftAnimation.fromValue = -view.bounds.size.width / 2
         
-        //アニメーションの終点
         rightToLeftAnimation.toValue = view.bounds.size.width / 2
         
-        //アニメーションに長さ
         rightToLeftAnimation.duration = 1.0
         
         rightToLeftAnimation.fillMode = kCAFillModeBackwards
@@ -36,7 +33,6 @@ extension ViewController {
     func rotationAnimation(){
         let rotation = CABasicAnimation(keyPath: "transform")
         
-        //アニメーションの長さ
         rotation.duration = 0.5
         
         rotation.repeatCount = 3

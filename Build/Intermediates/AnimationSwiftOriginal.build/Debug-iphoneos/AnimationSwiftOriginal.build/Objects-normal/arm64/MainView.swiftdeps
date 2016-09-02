@@ -8,20 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 - "createView"
 - "view"
-- "nibName"
-- "imageView"
 - "loadFromNib"
+- "imageView"
+- "nibName"
 depends-top-level:
 - "StringLiteralType"
 - "CGRect"
 - "UIView"
-- !private "UIViewAutoresizing"
-- !private "Array"
-- "NSCoder"
-- !private "NSBundle"
-- !private "UINib"
-- "MainView"
 - "UIImageView"
+- "NSCoder"
+- !private "UINib"
+- !private "Array"
+- !private "UIViewAutoresizing"
+- !private "NSBundle"
+- "MainView"
 depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "UINib"]

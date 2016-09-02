@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C22AnimationSwiftOriginal11AppDelegate", ""]
 provides-dynamic-lookup:
-- "application"
 - "applicationWillTerminate"
-- "applicationWillResignActive"
-- "applicationDidEnterBackground"
 - "applicationWillEnterForeground"
 - "window"
+- "applicationDidEnterBackground"
+- "application"
+- "applicationWillResignActive"
 - "applicationDidBecomeActive"
 depends-top-level:
-- "UIApplication"
-- !private "BooleanLiteralType"
-- "Bool"
-- "UIWindow"
-- "NSObject"
-- "UIApplicationDelegate"
 - "AnyObject"
 - "AppDelegate"
+- !private "BooleanLiteralType"
+- "UIApplicationDelegate"
+- "Bool"
+- "NSObject"
+- "UIWindow"
+- "UIApplication"
 - "UIResponder"
 depends-member:
 - ["Ps9AnyObject", "application"]

@@ -9,19 +9,19 @@ provides-dynamic-lookup:
 - "viewDidAppear"
 - "mainView"
 - "didReceiveMemoryWarning"
-- "loadView"
 - "animationDidStop"
+- "loadView"
 - "viewDidLoad"
 depends-top-level:
-- "ViewController"
-- "UIViewController"
-- "Bool"
-- !private "UIColor"
 - !private "StringLiteralType"
 - !private "CABasicAnimation"
+- "Bool"
+- !private "UIColor"
 - !private "CALayer"
-- "MainView"
 - "CAAnimation"
+- "MainView"
+- "UIViewController"
+- "ViewController"
 depends-member:
 - !private ["Ps9AnyObject", "CABasicAnimation"]
 - ["Ps9AnyObject", "MainView"]

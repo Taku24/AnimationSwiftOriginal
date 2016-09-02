@@ -34,20 +34,40 @@ extension ViewController {
     
     //真ん中で回転するアニメーション
     func rotationAnimation(){
-        let anime = CABasicAnimation(keyPath: "transform")
+        let rotation = CABasicAnimation(keyPath: "transform")
         
         //アニメーションの長さ
-        anime.duration = 0.5
-                
-        anime.repeatCount = 1
+        rotation.duration = 0.5
         
-        anime.autoreverses = true
+        rotation.repeatCount = 3
         
-        anime.fromValue = NSValue(CATransform3D: CATransform3DIdentity)
+        rotation.autoreverses = false
         
-        anime.toValue = NSValue(CATransform3D: CATransform3DMakeRotation(CGFloat(M_PI), 0, 1, 0))
+        rotation.fromValue = NSValue(CATransform3D: CATransform3DIdentity)
         
-        mainView.imageView.layer.addAnimation(anime, forKey: "rotation")
+        rotation.toValue = NSValue(CATransform3D: CATransform3DMakeRotation(CGFloat(M_PI), 0, 1, 0))
+        
+        rotation.setValue(mainView.imageView.layer, forKey: "layer")
+        
+        mainView.imageView.layer.addAnimation(rotation, forKey: nil)
+        
+    }
+    
+    //サイズを変更するアニメーション
+    func chageScaleAnimetion(){
+        let scale = CABasicAnimation(keyPath: "bounds.size")
+        
+        scale.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+        
+        scale.fromValue = NSValue(CGSize:CGSizeMake(103, 93))
+        
+        scale.toValue = NSValue(CGSize:CGSizeMake(300, 300))
+        
+        scale.duration = 0.5
+        
+        scale.setValue(mainView.imageView.layer, forKey: "layer")
+        
+        mainView.imageView.layer.addAnimation(scale, forKey: nil)
         
     }
     

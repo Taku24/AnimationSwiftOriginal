@@ -12,6 +12,8 @@
 		314CC5EF1D795306002E406A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314CC5ED1D795306002E406A /* Main.storyboard */; };
 		314CC5F11D795306002E406A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314CC5F01D795306002E406A /* Assets.xcassets */; };
 		314CC5F41D795306002E406A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314CC5F21D795306002E406A /* LaunchScreen.storyboard */; };
+		314CC5FF1D7957C4002E406A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314CC5FE1D7957C4002E406A /* MainView.swift */; };
+		314CC6011D7957D4002E406A /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314CC6001D7957D4002E406A /* MainView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		314CC5F01D795306002E406A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		314CC5F31D795306002E406A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		314CC5F51D795306002E406A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		314CC5FE1D7957C4002E406A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		314CC6001D7957D4002E406A /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,39 @@
 			isa = PBXGroup;
 			children = (
 				314CC5E91D795306002E406A /* AppDelegate.swift */,
-				314CC5EB1D795306002E406A /* ViewController.swift */,
+				314CC5FB1D79578D002E406A /* Model */,
+				314CC5FC1D795794002E406A /* View */,
+				314CC5FD1D795799002E406A /* Controller */,
 				314CC5ED1D795306002E406A /* Main.storyboard */,
 				314CC5F01D795306002E406A /* Assets.xcassets */,
 				314CC5F21D795306002E406A /* LaunchScreen.storyboard */,
 				314CC5F51D795306002E406A /* Info.plist */,
 			);
 			path = AnimationSwiftOriginal;
+			sourceTree = "<group>";
+		};
+		314CC5FB1D79578D002E406A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		314CC5FC1D795794002E406A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				314CC5FE1D7957C4002E406A /* MainView.swift */,
+				314CC6001D7957D4002E406A /* MainView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		314CC5FD1D795799002E406A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				314CC5EB1D795306002E406A /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					314CC5E51D795306002E406A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZCYDEPGR36;
 					};
 				};
 			};
@@ -123,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				314CC5F41D795306002E406A /* LaunchScreen.storyboard in Resources */,
+				314CC6011D7957D4002E406A /* MainView.xib in Resources */,
 				314CC5F11D795306002E406A /* Assets.xcassets in Resources */,
 				314CC5EF1D795306002E406A /* Main.storyboard in Resources */,
 			);
@@ -136,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				314CC5EC1D795306002E406A /* ViewController.swift in Sources */,
+				314CC5FF1D7957C4002E406A /* MainView.swift in Sources */,
 				314CC5EA1D795306002E406A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +282,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnimationSwiftOriginal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taku.apps.AnimationSwiftOriginal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +296,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnimationSwiftOriginal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taku.apps.AnimationSwiftOriginal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

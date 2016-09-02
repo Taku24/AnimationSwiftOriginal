@@ -7,20 +7,20 @@ provides-member:
 - ["C22AnimationSwiftOriginal14ViewController", "changeCornerRadius"]
 - ["C22AnimationSwiftOriginal14ViewController", "changeScale"]
 provides-dynamic-lookup:
+- "changeScale"
 - "gruopAnimations"
 - "changeCornerRadius"
-- "changeScale"
 depends-top-level:
+- !private "UIColor"
+- "ViewController"
 - !private "StringLiteralType"
 - !private "CGSizeMake"
-- "CABasicAnimation"
 - !private "Array"
-- !private "CAAnimationGroup"
-- !private "UIColor"
 - !private "CAMediaTimingFunction"
+- "CABasicAnimation"
+- !private "CAAnimationGroup"
 - !private "kCAMediaTimingFunctionEaseIn"
 - !private "BooleanLiteralType"
-- "ViewController"
 - !private "NSValue"
 depends-member:
 - !private ["Ps9AnyObject", "CAAnimationGroup"]

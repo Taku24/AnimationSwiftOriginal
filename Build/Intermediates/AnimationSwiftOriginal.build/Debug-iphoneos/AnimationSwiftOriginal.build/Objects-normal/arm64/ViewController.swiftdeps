@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C22AnimationSwiftOriginal14ViewController", ""]
 provides-dynamic-lookup:
-- "viewDidAppear"
-- "loadView"
 - "didReceiveMemoryWarning"
 - "animationDidStop"
-- "mainView"
+- "loadView"
 - "viewDidLoad"
+- "viewDidAppear"
+- "mainView"
 depends-top-level:
+- "CAAnimation"
 - "MainView"
+- "UIViewController"
+- "ViewController"
 - "Bool"
 - !private "UIColor"
-- "CAAnimation"
-- "ViewController"
-- "UIViewController"
 depends-member:
 - ["Ps9AnyObject", "MainView"]
 - !private ["Ps9AnyObject", "UIColor"]

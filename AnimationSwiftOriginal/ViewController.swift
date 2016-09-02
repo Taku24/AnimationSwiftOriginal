@@ -29,22 +29,16 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        //コメントアウトを外すと実行できます。
 //        moveAnimation()
 //        rotationAnimation()
-        chageScaleAnimetion()
+//        chageScaleAnimetion()
+        gruopAnimations()
     }
     
     //アニメーションが終わると呼ばれるメソッド
     override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-        //真ん中でアップするアニメーション        
-        let layer = anim.valueForKey("layer") as? CALayer
-        anim.setValue(nil, forKey: "layer")
         
-        let buruburuAnimation = CABasicAnimation(keyPath: "transform.scale")
-        buruburuAnimation.fromValue = 1.25
-        buruburuAnimation.toValue = 1.0
-        buruburuAnimation.duration = 0.25
-        layer?.addAnimation(buruburuAnimation, forKey: nil)
     }
 
 

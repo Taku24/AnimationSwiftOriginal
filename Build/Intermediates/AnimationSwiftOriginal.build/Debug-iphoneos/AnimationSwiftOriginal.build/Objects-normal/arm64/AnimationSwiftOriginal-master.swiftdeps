@@ -1,8 +1,9 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "5ea242f1f1d7b75c2839884030565f89"
-build_time: [526128279, 189238000]
+build_time: [526128591, 96898000]
 inputs:
-  "/Volumes/DATA/Swift/AnimationSwiftOriginal/AnimationSwiftOriginal/ViewController.swift": [526128275, 0]
-  "/Volumes/DATA/Swift/AnimationSwiftOriginal/AnimationSwiftOriginal/ViewController + AddAnimation.swift": [526128275, 0]
+  "/Volumes/DATA/Swift/AnimationSwiftOriginal/AnimationSwiftOriginal/ViewController.swift": [526128404, 0]
+  "/Volumes/DATA/Swift/AnimationSwiftOriginal/AnimationSwiftOriginal/ViewController + BasicAnimations.swift": [526128405, 0]
   "/Volumes/DATA/Swift/AnimationSwiftOriginal/AnimationSwiftOriginal/MainView.swift": [526128089, 0]
+  "/Volumes/DATA/Swift/AnimationSwiftOriginal/AnimationSwiftOriginal/ViewController + GroupAnimations.swift": [526128404, 0]
   "/Volumes/DATA/Swift/AnimationSwiftOriginal/AnimationSwiftOriginal/AppDelegate.swift": [526112774, 0]

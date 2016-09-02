@@ -143,6 +143,14 @@ SWIFT_CLASS("_TtC22AnimationSwiftOriginal14ViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class CABasicAnimation;
+
+@interface ViewController (SWIFT_EXTENSION(AnimationSwiftOriginal))
+- (void)gruopAnimations;
+- (CABasicAnimation * _Nonnull)changeCornerRadius;
+- (CABasicAnimation * _Nonnull)changeScale;
+@end
+
 
 @interface ViewController (SWIFT_EXTENSION(AnimationSwiftOriginal))
 - (void)moveAnimation;

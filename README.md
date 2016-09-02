@@ -13,8 +13,8 @@
   keyPathの値を変更することによってアニメーションの動きを変化させることができる  
   ・position.x : x軸の移動  
   ・position.y : y軸の移動  
-  ・transform : 変形??
-  ・transform.scale : 上記+大きさ??
+  ・transform : 変形??  
+  ・transform.scale : 上記+大きさ??  
   
 #moveAnimation
   画面の左から真ん中へ向けてimageViewが移動するメソッド  

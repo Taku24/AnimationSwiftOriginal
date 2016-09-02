@@ -6,22 +6,27 @@ provides-nominal:
 provides-member:
 - ["C22AnimationSwiftOriginal8MainView", ""]
 provides-dynamic-lookup:
-- "nibName"
-- "imageView"
-- "view"
-- "createView"
 - "loadFromNib"
+- "sizeButton"
+- "createView"
+- "mixButton"
+- "imageView"
+- "moveButton"
+- "view"
+- "rotationButton"
+- "nibName"
 depends-top-level:
-- !private "UIViewAutoresizing"
-- "UIImageView"
-- "CGRect"
+- !private "NSBundle"
 - "MainView"
+- "UIButton"
+- "UIView"
+- !private "Array"
+- !private "UINib"
+- "CGRect"
 - "NSCoder"
 - "StringLiteralType"
-- "UIView"
-- !private "UINib"
-- !private "NSBundle"
-- !private "Array"
+- !private "UIViewAutoresizing"
+- "UIImageView"
 depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "UINib"]
@@ -35,7 +40,11 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateWithOwner"]
 - ["Ps9AnyObject", "loadFromNib"]
+- ["Ps9AnyObject", "mixButton"]
+- ["Ps9AnyObject", "moveButton"]
 - ["Ps9AnyObject", "nibName"]
+- ["Ps9AnyObject", "rotationButton"]
+- ["Ps9AnyObject", "sizeButton"]
 - ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Generator"]
@@ -70,7 +79,11 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "instantiateWithOwner"]
 - ["Ps11CVarArgType", "loadFromNib"]
+- ["Ps11CVarArgType", "mixButton"]
+- ["Ps11CVarArgType", "moveButton"]
 - ["Ps11CVarArgType", "nibName"]
+- ["Ps11CVarArgType", "rotationButton"]
+- ["Ps11CVarArgType", "sizeButton"]
 - ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", ""]
 - !private ["Ps14CollectionType", "Generator"]
@@ -97,7 +110,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateWithOwner"]
 - ["Ps28CustomDebugStringConvertible", "loadFromNib"]
+- ["Ps28CustomDebugStringConvertible", "mixButton"]
+- ["Ps28CustomDebugStringConvertible", "moveButton"]
 - ["Ps28CustomDebugStringConvertible", "nibName"]
+- ["Ps28CustomDebugStringConvertible", "rotationButton"]
+- ["Ps28CustomDebugStringConvertible", "sizeButton"]
 - ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "Distance"]
@@ -119,7 +136,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateWithOwner"]
 - ["Ps23CustomStringConvertible", "loadFromNib"]
+- ["Ps23CustomStringConvertible", "mixButton"]
+- ["Ps23CustomStringConvertible", "moveButton"]
 - ["Ps23CustomStringConvertible", "nibName"]
+- ["Ps23CustomStringConvertible", "rotationButton"]
+- ["Ps23CustomStringConvertible", "sizeButton"]
 - ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "Distance"]
@@ -138,7 +159,11 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateWithOwner"]
 - ["Ps9Equatable", "loadFromNib"]
+- ["Ps9Equatable", "mixButton"]
+- ["Ps9Equatable", "moveButton"]
 - ["Ps9Equatable", "nibName"]
+- ["Ps9Equatable", "rotationButton"]
+- ["Ps9Equatable", "sizeButton"]
 - ["Ps9Equatable", "view"]
 - ["Ps9Equatable", ""]
 - !private ["Ps16ForwardIndexType", "Distance"]
@@ -158,7 +183,11 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateWithOwner"]
 - ["Ps8Hashable", "loadFromNib"]
+- ["Ps8Hashable", "mixButton"]
+- ["Ps8Hashable", "moveButton"]
 - ["Ps8Hashable", "nibName"]
+- ["Ps8Hashable", "rotationButton"]
+- ["Ps8Hashable", "sizeButton"]
 - ["Ps8Hashable", "view"]
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Generator"]
@@ -178,6 +207,7 @@ depends-member:
 - ["C22AnimationSwiftOriginal8MainView", "CGRect"]
 - !private ["C22AnimationSwiftOriginal8MainView", "NSBundle"]
 - ["C22AnimationSwiftOriginal8MainView", "NSCoder"]
+- ["C22AnimationSwiftOriginal8MainView", "UIButton"]
 - ["C22AnimationSwiftOriginal8MainView", "UIImageView"]
 - !private ["C22AnimationSwiftOriginal8MainView", "UINib"]
 - ["C22AnimationSwiftOriginal8MainView", "UIView"]
@@ -189,7 +219,11 @@ depends-member:
 - ["C22AnimationSwiftOriginal8MainView", "imageView"]
 - ["C22AnimationSwiftOriginal8MainView", "init"]
 - ["C22AnimationSwiftOriginal8MainView", "loadFromNib"]
+- ["C22AnimationSwiftOriginal8MainView", "mixButton"]
+- ["C22AnimationSwiftOriginal8MainView", "moveButton"]
 - ["C22AnimationSwiftOriginal8MainView", "nibName"]
+- ["C22AnimationSwiftOriginal8MainView", "rotationButton"]
+- ["C22AnimationSwiftOriginal8MainView", "sizeButton"]
 - ["C22AnimationSwiftOriginal8MainView", "view"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
@@ -220,12 +254,17 @@ depends-member:
 - ["PSo8NSCoding", "imageView"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "loadFromNib"]
+- ["PSo8NSCoding", "mixButton"]
+- ["PSo8NSCoding", "moveButton"]
 - ["PSo8NSCoding", "nibName"]
+- ["PSo8NSCoding", "rotationButton"]
+- ["PSo8NSCoding", "sizeButton"]
 - ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "NSBundle"]
 - ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIImageView"]
 - !private ["CSo8NSObject", "UINib"]
 - ["CSo8NSObject", "UIView"]
@@ -239,7 +278,11 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateWithOwner"]
 - ["CSo8NSObject", "loadFromNib"]
+- ["CSo8NSObject", "mixButton"]
+- ["CSo8NSObject", "moveButton"]
 - ["CSo8NSObject", "nibName"]
+- ["CSo8NSObject", "rotationButton"]
+- ["CSo8NSObject", "sizeButton"]
 - ["CSo8NSObject", "view"]
 - !private ["PSo16NSObjectProtocol", "NSBundle"]
 - !private ["PSo16NSObjectProtocol", "UINib"]
@@ -253,7 +296,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateWithOwner"]
 - ["PSo16NSObjectProtocol", "loadFromNib"]
+- ["PSo16NSObjectProtocol", "mixButton"]
+- ["PSo16NSObjectProtocol", "moveButton"]
 - ["PSo16NSObjectProtocol", "nibName"]
+- ["PSo16NSObjectProtocol", "rotationButton"]
+- ["PSo16NSObjectProtocol", "sizeButton"]
 - ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["Ps13OptionSetType", "Element"]
@@ -293,7 +340,11 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "imageView"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "loadFromNib"]
+- ["PSo29UIAccessibilityIdentification", "mixButton"]
+- ["PSo29UIAccessibilityIdentification", "moveButton"]
 - ["PSo29UIAccessibilityIdentification", "nibName"]
+- ["PSo29UIAccessibilityIdentification", "rotationButton"]
+- ["PSo29UIAccessibilityIdentification", "sizeButton"]
 - ["PSo29UIAccessibilityIdentification", "view"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "NSBundle"]
@@ -307,7 +358,11 @@ depends-member:
 - ["PSo12UIAppearance", "imageView"]
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "loadFromNib"]
+- ["PSo12UIAppearance", "mixButton"]
+- ["PSo12UIAppearance", "moveButton"]
 - ["PSo12UIAppearance", "nibName"]
+- ["PSo12UIAppearance", "rotationButton"]
+- ["PSo12UIAppearance", "sizeButton"]
 - ["PSo12UIAppearance", "view"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "NSBundle"]
@@ -321,7 +376,11 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "loadFromNib"]
+- ["PSo21UIAppearanceContainer", "mixButton"]
+- ["PSo21UIAppearanceContainer", "moveButton"]
 - ["PSo21UIAppearanceContainer", "nibName"]
+- ["PSo21UIAppearanceContainer", "rotationButton"]
+- ["PSo21UIAppearanceContainer", "sizeButton"]
 - ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo17UICoordinateSpace", "NSBundle"]
@@ -335,7 +394,11 @@ depends-member:
 - ["PSo17UICoordinateSpace", "imageView"]
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "loadFromNib"]
+- ["PSo17UICoordinateSpace", "mixButton"]
+- ["PSo17UICoordinateSpace", "moveButton"]
 - ["PSo17UICoordinateSpace", "nibName"]
+- ["PSo17UICoordinateSpace", "rotationButton"]
+- ["PSo17UICoordinateSpace", "sizeButton"]
 - ["PSo17UICoordinateSpace", "view"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "NSBundle"]
@@ -349,7 +412,11 @@ depends-member:
 - ["PSo13UIDynamicItem", "imageView"]
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "loadFromNib"]
+- ["PSo13UIDynamicItem", "mixButton"]
+- ["PSo13UIDynamicItem", "moveButton"]
 - ["PSo13UIDynamicItem", "nibName"]
+- ["PSo13UIDynamicItem", "rotationButton"]
+- ["PSo13UIDynamicItem", "sizeButton"]
 - ["PSo13UIDynamicItem", "view"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["PSo18UIFocusEnvironment", "NSBundle"]
@@ -363,7 +430,11 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "loadFromNib"]
+- ["PSo18UIFocusEnvironment", "mixButton"]
+- ["PSo18UIFocusEnvironment", "moveButton"]
 - ["PSo18UIFocusEnvironment", "nibName"]
+- ["PSo18UIFocusEnvironment", "rotationButton"]
+- ["PSo18UIFocusEnvironment", "sizeButton"]
 - ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo5UINib", "init"]
@@ -371,6 +442,7 @@ depends-member:
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "NSBundle"]
 - ["CSo11UIResponder", "NSCoder"]
+- ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIImageView"]
 - !private ["CSo11UIResponder", "UINib"]
 - ["CSo11UIResponder", "UIView"]
@@ -383,7 +455,11 @@ depends-member:
 - ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "loadFromNib"]
+- ["CSo11UIResponder", "mixButton"]
+- ["CSo11UIResponder", "moveButton"]
 - ["CSo11UIResponder", "nibName"]
+- ["CSo11UIResponder", "rotationButton"]
+- ["CSo11UIResponder", "sizeButton"]
 - ["CSo11UIResponder", "view"]
 - !private ["PSo18UITraitEnvironment", "NSBundle"]
 - !private ["PSo18UITraitEnvironment", "UINib"]
@@ -396,12 +472,17 @@ depends-member:
 - ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "loadFromNib"]
+- ["PSo18UITraitEnvironment", "mixButton"]
+- ["PSo18UITraitEnvironment", "moveButton"]
 - ["PSo18UITraitEnvironment", "nibName"]
+- ["PSo18UITraitEnvironment", "rotationButton"]
+- ["PSo18UITraitEnvironment", "sizeButton"]
 - ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "CGRect"]
 - !private ["CSo6UIView", "NSBundle"]
 - ["CSo6UIView", "NSCoder"]
+- ["CSo6UIView", "UIButton"]
 - ["CSo6UIView", "UIImageView"]
 - !private ["CSo6UIView", "UINib"]
 - ["CSo6UIView", "UIView"]
@@ -414,7 +495,11 @@ depends-member:
 - ["CSo6UIView", "imageView"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "loadFromNib"]
+- ["CSo6UIView", "mixButton"]
+- ["CSo6UIView", "moveButton"]
 - ["CSo6UIView", "nibName"]
+- ["CSo6UIView", "rotationButton"]
+- ["CSo6UIView", "sizeButton"]
 - ["CSo6UIView", "view"]
 - ["CSo6UIView", ""]
 - !private ["VSC18UIViewAutoresizing", "Element"]
@@ -464,7 +549,11 @@ depends-member:
 - ["Ps12_Reflectable", "imageView"]
 - ["Ps12_Reflectable", "init"]
 - ["Ps12_Reflectable", "loadFromNib"]
+- ["Ps12_Reflectable", "mixButton"]
+- ["Ps12_Reflectable", "moveButton"]
 - ["Ps12_Reflectable", "nibName"]
+- ["Ps12_Reflectable", "rotationButton"]
+- ["Ps12_Reflectable", "sizeButton"]
 - ["Ps12_Reflectable", "view"]
 - ["Ps12_Reflectable", ""]
 - !private ["Ps18_SignedIntegerType", "Distance"]
@@ -541,4 +630,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "e571b5cbbbfaccc323f9a1c9e02920ce"
+interface-hash: "731d9682ec05146bfb8b53093245e043"

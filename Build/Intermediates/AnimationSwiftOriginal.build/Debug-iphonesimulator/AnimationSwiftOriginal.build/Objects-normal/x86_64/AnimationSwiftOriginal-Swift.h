@@ -136,8 +136,24 @@ SWIFT_CLASS("_TtC22AnimationSwiftOriginal14ViewController")
 - (void)loadView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)viewDidAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CABasicAnimation;
+
+@interface ViewController (SWIFT_EXTENSION(AnimationSwiftOriginal))
+- (void)gruopAnimations;
+- (CABasicAnimation * _Nonnull)changeCornerRadius;
+- (CABasicAnimation * _Nonnull)changeScale;
+@end
+
+
+@interface ViewController (SWIFT_EXTENSION(AnimationSwiftOriginal))
+- (void)moveAnimation;
+- (void)rotationAnimation;
+- (void)chageScaleAnimetion;
 @end
 
 #pragma clang diagnostic pop

@@ -35,11 +35,5 @@ class ViewController: UIViewController {
 //        chageScaleAnimetion()
         gruopAnimations()
     }
-    
-    //アニメーションが終わると呼ばれるメソッド
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-        
-    }
-
 
 }

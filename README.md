@@ -37,7 +37,7 @@
   A timing function defining the pacing of the animation
   
 #gruopAnimations
-  複数のアニメーションを組み合わせて実行するメソッド　　
+  複数のアニメーションを組み合わせて実行するメソッド  
   配列のように組み合わせることが可能で、今回は角が丸くなるアニメーションと大きさが変化するアニメーションの組み合わせ  
 
 

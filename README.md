@@ -1,5 +1,6 @@
 # AnimationSwiftOriginal
-  なんとなくメモ程度でこのプログラムで使われているメソッドの備忘録 (マークダウンの書き方は勉強中なので悪しからず)
+  なんとなくメモ程度でこのプログラムで使われているメソッドの備忘録 (マークダウンの書き方は勉強中なので悪しからず)  
+  Swiftのアニメーションの詳細はこちら(http://qiita.com/h_nagami/items/0ad8f8ef5bc23de21e1e)
   
 #ここで使ってるアニメーションの基本メソッド
   ・CABasicAnimation    :アニメーションで変化させるプロパティの変化前と後、インターバルを設定することでアニメーションさせるクラス  
@@ -14,10 +15,13 @@
   ・position.x : x軸の移動  
   ・position.y : y軸の移動  
   ・transform : 変形??  
-  ・transform.scale : 上記+大きさ??  
+  ・transform.scale : 上記+大きさ??
+  ・cornerRadius : 四角形の角を丸く
+  ・bounds.size : サイズの変化
   
 #moveAnimation
-  画面の左から真ん中へ向けてimageViewが移動するメソッド  
+  imageViewが移動するメソッド  
+  keyPathを変化させると横から縦から変化させることも可能  
   
 #rotationAnimation
   画面中央でimageViewが回転するメソッド  

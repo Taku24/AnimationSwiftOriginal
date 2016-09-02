@@ -146,6 +146,7 @@ SWIFT_CLASS("_TtC22AnimationSwiftOriginal14ViewController")
 
 @interface ViewController (SWIFT_EXTENSION(AnimationSwiftOriginal))
 - (void)moveAnimation;
+- (void)rotationAnimation;
 @end
 
 #pragma clang diagnostic pop

@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C22AnimationSwiftOriginal14ViewController", ""]
 provides-dynamic-lookup:
-- "viewDidAppear"
-- "mainView"
 - "didReceiveMemoryWarning"
 - "animationDidStop"
-- "loadView"
+- "mainView"
 - "viewDidLoad"
+- "viewDidAppear"
+- "loadView"
 depends-top-level:
+- "ViewController"
 - !private "StringLiteralType"
+- !private "CALayer"
+- "UIViewController"
+- "CAAnimation"
 - !private "CABasicAnimation"
+- "MainView"
 - "Bool"
 - !private "UIColor"
-- !private "CALayer"
-- "CAAnimation"
-- "MainView"
-- "UIViewController"
-- "ViewController"
 depends-member:
 - !private ["Ps9AnyObject", "CABasicAnimation"]
 - ["Ps9AnyObject", "MainView"]

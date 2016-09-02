@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C22AnimationSwiftOriginal8MainView", ""]
 provides-dynamic-lookup:
-- "createView"
 - "view"
-- "nibName"
-- "imageView"
 - "loadFromNib"
+- "createView"
+- "imageView"
+- "nibName"
 depends-top-level:
-- "StringLiteralType"
-- "CGRect"
 - "UIView"
-- !private "UIViewAutoresizing"
-- !private "Array"
-- "NSCoder"
 - !private "NSBundle"
 - !private "UINib"
-- "MainView"
+- "CGRect"
+- "StringLiteralType"
+- "NSCoder"
 - "UIImageView"
+- !private "Array"
+- "MainView"
+- !private "UIViewAutoresizing"
 depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "UINib"]

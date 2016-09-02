@@ -3,7 +3,8 @@
   
 #moveAnimation
   このメソッドは画面の左から真ん中へ向けてimageViewが移動するメソッドです。  
-  ・rightToLeftAnimation: CABasicAnimationを使いここのkeyPathでアニメーションの種類を決定する。  (keyPathは後でまとめる)  
+  ・rightToLeftAnimation: CABasicAnimationを使いここのkeyPathでアニメーションの種類を決定する。  
+  (keyPathは後でまとめる)  
   ・fromValue           :アニメーションの開始位置  
   ・toValue             :アニメーションの終端位置  
   

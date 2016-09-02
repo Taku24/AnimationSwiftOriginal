@@ -5,7 +5,7 @@
   ・CABasicAnimation    :アニメーションで変化させるプロパティの変化前と後、インターバルを設定することでアニメーションさせるクラス  
   ・fromValue           :アニメーションの開始位置  
   ・toValue             :アニメーションの終端位置  
-  ・duration            :アニメーションの長さ
+  ・duration            :アニメーションの長さ  
   ・fillMode            :よくわかってないのでこちらを参照(http://swift-studying.com/blog/swift/?p=1400)  
   ・setValue            :そのままですが値を設定する(アニメーションが終わってからの処理等に活用)
   

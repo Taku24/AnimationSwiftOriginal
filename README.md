@@ -32,9 +32,9 @@
   アニメーションが終わると呼ばれるメソッド
   
 #chageScaleAnimetion
-  imageViewのサイズが変化するメソッド
+  imageViewのサイズが変化するメソッド  
   ・timingFunction : リファレンスによるとアニメーションのペースを決めてる？？  
-                    A timing function defining the pacing of the animation
+  A timing function defining the pacing of the animation
   
   
 

@@ -68,11 +68,11 @@
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		yMHGlfQEFcm0eEnoVQbKACutK2M=
+		S0OZROYHOHIO7SbGGiJT2UbHeQc=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		QjFClkcmc7XQYi0WvvZRlpro4fs=
+		UtFv47xufCoFUxugPq92SIlIK4M=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
@@ -104,7 +104,7 @@
 		</data>
 		<key>MainView.nib</key>
 		<data>
-		Xme7a6avwwYlQv49zPneNOUI8Mg=
+		4iW17fNsLjvrOoFWSFBnH97/TaI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -221,22 +221,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yMHGlfQEFcm0eEnoVQbKACutK2M=
+			S0OZROYHOHIO7SbGGiJT2UbHeQc=
 			</data>
 			<key>hash2</key>
 			<data>
-			MPBgyqHYLRUujdaQ2HMZsGamyY5DGuzwmATYqc6sZZU=
+			OFg969g0ZIkqYKWgrNk9paAv70fKejFSSzMspZkEZkE=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QjFClkcmc7XQYi0WvvZRlpro4fs=
+			UtFv47xufCoFUxugPq92SIlIK4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			iNVF7LkFmktQAW5LqGxcVttsS4wu0jq3pMAUi5PwXI4=
+			LZJcObArUDal4unZu72RfhlQo74BA2zAl6OnJmCs/Bk=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
@@ -309,11 +309,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xme7a6avwwYlQv49zPneNOUI8Mg=
+			4iW17fNsLjvrOoFWSFBnH97/TaI=
 			</data>
 			<key>hash2</key>
 			<data>
-			EnosHRZ6UWAsef2MQWmHzz+6XESqCfgYIGRkc4v2SMg=
+			S2DPazL409Abdrf4/Pr/Ejxq3Xl81lWI2YmEcoOPQ+4=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

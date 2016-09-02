@@ -16,18 +16,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="O6a-FE-edc">
-                    <rect key="frame" x="249" y="213" width="103" height="93"/>
+                    <rect key="frame" x="249" y="210" width="103" height="93"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="103" id="ewo-GK-Mir"/>
-                        <constraint firstAttribute="height" constant="93" id="hcr-Vf-5xr"/>
+                        <constraint firstAttribute="width" constant="103" id="Gre-gI-bvy"/>
+                        <constraint firstAttribute="height" constant="93" id="XQT-Gx-PF8"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="O6a-FE-edc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fNH-FC-6iR"/>
-                <constraint firstItem="O6a-FE-edc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="213" id="g0m-0U-dlN"/>
+                <constraint firstItem="O6a-FE-edc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="68f-W2-1fe"/>
+                <constraint firstItem="O6a-FE-edc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="210" id="cXl-7f-IP9"/>
             </constraints>
+            <point key="canvasLocation" x="357" y="298"/>
         </view>
     </objects>
     <resources>
